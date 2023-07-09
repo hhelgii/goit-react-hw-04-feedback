@@ -63,7 +63,6 @@ import css from './app.module.css';
 //   );
 // };
 
-
 // import React, { useState } from 'react';
 // import { Section } from './section/Section';
 // import { Notification } from './notification/Notification';
@@ -76,7 +75,7 @@ export const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const onClickRate = (option) => {
+  const onClickRate = option => {
     switch (option) {
       case 'good':
         setGood(prevGood => prevGood + 1);
